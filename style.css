@@ -1,0 +1,97 @@
+:root{
+    --yellow: #F4D04E;
+    --gray-950:#111111;
+    --gray-500:#6B6B6B;
+    --white: #FFFFFF;
+    /* color */
+
+    --primary-heading-size: 25px;
+    --secondary-heading-size:16px;
+    --text-size: 14px;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Figtree:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+body{
+    background-color: #F4D04E;
+}
+.container{
+    width: min(90%, 385px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--gray-950);
+    padding: 24px;
+    border-radius: 20px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 4px 4px 1px #000000;
+}
+.container__heading{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 200px;
+    }
+}
+.container__text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.container__text__hastag{
+    font-size: var(--text-size);
+    font-weight: bold;
+    color: var(--gray-950);
+    background-color: var(--yellow);
+    width: max-content;
+    box-shadow: 0 4px 4px #00000042;
+    padding: 4px 12px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    line-height: 150%;
+}
+.container__text__date{
+    font-size: var(--text-size);
+    color: var(--gray-950);
+    width: max-content;
+    line-height: 150%;
+}
+.container__text__title{
+    font-weight: bolder;
+    font-size: var(--primary-heading-size);
+    width: max-content;
+    color: var(--gray-950);
+    line-height: 150%;
+}
+.container__text__paragraph{
+    color: var(--gray-500);
+    font-size: var(--secondary-heading-size);
+    line-height: 150%;
+}
+
+.container__user{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.container__user-name{
+    font-size: var(--text-size);
+    font-weight: bolder;
+}
+
+.container__user-img img{
+    border: 1px solid #000000;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px #00000042;
+}
