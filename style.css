@@ -40,10 +40,11 @@ body{
 }
 .container__heading{
     width: 100%;
-    img{
-        width: 100%;
-        height: 200px;
-    }
+
+}
+.container__heading img{
+    width: 100%;
+    height: 200px;
 }
 .container__text{
     display: flex;
